@@ -6,6 +6,8 @@
 5. Printing gross salary upto 2 decimal points.
 
 ________________________________________________________________________________________________________________________________________________________________________________________________________-
+Actual code:
+
 in_t=int(input())                                                      #input no.input cases
 for i in range(0,in_t):
 	basic_salary=int(input())                                      #input basic salary 
