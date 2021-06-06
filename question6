@@ -1,7 +1,25 @@
+pseudocode:
+1. we input no. of test cases
+2. Then accept inputs for l,c,d
+3. We know a cat and dog has 4 legs and connsidering other assumptions we calculate minimum no.of legs counted and maximum no.of legs 
+4. for minimum we 4 multiply by no.of dogs
+5. or if cats are more than minium = no.of cats minus no. of dogs which give us the no. of dog /cat on ground 
+6. we multiply it by 4
+7. for maximum scenario we have no. of cats + no.of dogs multiplied by 4
+8. now if no.f legs = 0 or is greater than our minimum variable  then we print yes
+9. Otherwise No
+
+
+
+
+
+________________________________________________________________________________________________________________________________________________________________________________________________________
+Actual code:
+
 in_t = int(input())                                                     #no. of inputs
 while(in_t != 0):
     c, d, l = map(int, input().split())                                # input no.of cat dogs and legs in c,d,l
-    if (c <= 2*d):                                                     #when no. of cats is = 0r less than twice of dogs then we can only 4 legs of a dog and if we have 2 dogs then 8
+    if (c <= 2*d):                                                     #when no. of cats is = 0 less than twice of dogs then we can only 4 legs of a dog and if we have 2 dogs then 8
         minimum = 4*d
     else:
         minimum = (c-d)*4                                              #if say we have 4 cats and 1 dogs that is no. of cats is greater than double of no.of dogs then we say 
