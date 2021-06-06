@@ -1,0 +1,24 @@
+for in_t in range(int(input())):                                                #iiterating in the range of input string
+    strin_g = input()                                                           #taking input
+    d_ct = {}  #making a empty dictionary
+
+    for i in strin_g:                                                           #itterating variable i in the string given
+
+        if (i in d_ct):                                                          #iiterating in dictionary
+            d_ct[i] += 1                                                         #adding count
+        else:
+            d_ct[i] = 1
+    l_ist = []                                                                   #initialising list
+
+    for i in d_ct.values():                                                      
+        l_ist.append(i)                                                           #adding values in list
+        
+    l_ist.sort()                                                                 #itterating in dictionary and putting the values in a list so that we can sort it as list allows                                                                                    us to sort
+    
+    if (len(l_ist) < 3):                                                         #as per the problem if no,of char is less than 3 ,it id dynamic    
+        print("Dynamic")                                                         
+    else:
+        if (l_ist[-1] == l_ist[-2] + l_ist[-3]):                                  #fibbonacci condition
+            print("Dynamic")
+        else:
+            print("Not")
