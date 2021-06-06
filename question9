@@ -1,0 +1,7 @@
+in_t = int(input())                                    #no.of test runs 
+for _ in range(in_t):                                     
+    n = int(input())                                   #size of array
+    l = list(map(int,input().split()))                 #multiple input using map()
+    a = min(l)                                         # min() gives minimum value
+    c = a * (n - 1)                                    #to minimize cost we pick the smallest and add them
+    print(c)
