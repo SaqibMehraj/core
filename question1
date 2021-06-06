@@ -12,6 +12,7 @@
 11. Else they are not dynamic and hence displayed "NOT".
 
 ________________________________________________________________________________________________________________________________________________________________________________________________________________
+Actual code:
 
 for in_t in range(int(input())):                                                #iiterating in the range of input string
     strin_g = input()                                                           #taking input
