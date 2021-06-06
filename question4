@@ -1,0 +1,16 @@
+for _ in range(int(input())):                       
+    z = int(input())                                        #taking input from user (no.of test cases)(minutes)
+    l_n = input().split()[:z]                                 # taking multiple inputs (milk or cookie)
+    c=0                                                     #initializing
+    for i in l_n:                                             
+        if i=="cookie":                                     #if else used whenever he gets a cookie c is incremented or else nothing happens to the value of c
+            c+=1
+        else:
+            c=0
+            
+        if c==2:                                             #after 2 cases that can be mil milk or milk cookie or cookie milk or cookie cookie it should come out of for loop
+            break
+    if c==0:
+        print("YES")                                          #basic logic (if c variable = 1 that means he had a cookie)
+    else: 
+        print("NO")
