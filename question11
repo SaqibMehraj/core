@@ -1,3 +1,9 @@
+#pseudocode
+1.Enter the input 
+2.if character enter is b|B we print Battleship
+3.Similarly to other cases.
+
+
 in_t=int(input())                                          #no. of inputs
 for i in range(in_t):
     ch=input()                                             #input character
