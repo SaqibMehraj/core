@@ -1,11 +1,26 @@
+#pseudo code
+1. First we take input from user into variable.
+2. We initialize empty dictionary.
+3. We iiterateeach character in string
+4. For each character of string we add value to our dictionary
+5. Else we keep our dic_t=1
+6. We create emplt list
+7. Append key,value in the list
+8. Sort the list
+9. By the question we length of string < 3 we print it as dynamic
+10.By fibbonacci if character at -1 is equal to the sum of characters at -2 and -3,then it is dynamic.
+11. Else they are not dynamic and hence displayed "NOT".
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________
+
 for in_t in range(int(input())):                                                #iiterating in the range of input string
     strin_g = input()                                                           #taking input
-    d_ct = {}  #making a empty dictionary
+    d_ct = {}                                                                   #making a empty dictionary
 
     for i in strin_g:                                                           #itterating variable i in the string given
 
         if (i in d_ct):                                                          #iiterating in dictionary
-            d_ct[i] += 1                                                         #adding count
+            d_ct[i] += 1                                                         #adding 
         else:
             d_ct[i] = 1
     l_ist = []                                                                   #initialising list
