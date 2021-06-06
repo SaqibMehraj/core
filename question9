@@ -1,3 +1,15 @@
+#pseudo code
+1.input no.of test cases
+2. inputsize of array
+3. input multiple inputs using map() 
+4. comparing the values and saving the lowest number using min() function
+5. Minimize the string to a single value by comparing and picking up the smallest number between the two
+6. Then adding the lowest two values to get a single value
+
+________________________________________________________________________________________________________________________________________________________________________________
+Code:
+
+
 in_t = int(input())                                    #no.of test runs 
 for _ in range(in_t):                                     
     n = int(input())                                   #size of array
