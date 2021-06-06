@@ -1,10 +1,18 @@
-in_t=int(input())                                                #input no.input cases
+#pseudo code
+1. Enter no.of test cases
+2. Entering base salary from user using input() function
+3. Condition 1 by calaculation if basic salary entered is less than 15000, then gross salary is twice the base salary
+4. and for condition 2 we have the formula that gross salary = basic salary + DA+ HRA
+5. Printing gross salary upto 2 decimal points.
+
+________________________________________________________________________________________________________________________________________________________________________________________________________-
+in_t=int(input())                                                      #input no.input cases
 for i in range(0,in_t):
 	basic_salary=int(input())                                      #input basic salary 
 	if(basic_salary<1500):
-		gross_salary=base_salary*2                                   #if basic salary is less than 1500 then gross salary is twice of base salary
+		gross_salary=basic_salary*2                             #if basic salary is less than 1500 then gross salary is twice of base salary
 	else:
 		hra=500
-		da=base_salary*0.98
-		gross_salary=base_salary + hra + da                         #in other case i.e.. when base salary is more than 15k then gross salary is summation of base salary,da and hra
+		da=basic_salary*0.98
+		gross_salary=basic_salary + hra + da                     #in other case i.e.. when base salary is more than 15k then gross salary is summation of base salary,da and hra
 	print('%0.2f'%gross_salary)
