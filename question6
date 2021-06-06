@@ -1,0 +1,16 @@
+in_t = int(input())                                                     #no. of inputs
+while(in_t != 0):
+    c, d, l = map(int, input().split())                                # input no.of cat dogs and legs in c,d,l
+    if (c <= 2*d):                                                     #when no. of cats is = 0r less than twice of dogs then we can only 4 legs of a dog and if we have 2 dogs then 8
+        minimum = 4*d
+    else:
+        minimum = (c-d)*4                                              #if say we have 4 cats and 1 dogs that is no. of cats is greater than double of no.of dogs then we say 
+                                                                        we can accomodate only 2 cats on dog so will have 12 legs.
+        
+    maximum = (c+d)*4)                                                 #maximun no. of legs possible = all the cat legs + all the dogs legsi.e..4*(c+d) as each cat and dog has 4 legs max.
+    
+    if ((l%4 == 0) and (l >= minimum) and (l <= maximum):
+        print("yes")                                                   
+    else:
+        print("no")
+    t = t - 1
