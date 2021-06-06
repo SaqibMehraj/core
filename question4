@@ -1,6 +1,16 @@
+Pseudocode:
+1. Take multiple inputs and seperate by a space
+2. Consider answer = True
+3. for itteration from 1 to N we see if the input is cookie 
+4. If it s cookie then we have see the second condition if it is milk then answer remains yes or true 
+5. But if it is cookie again then diplay "NO"
+
+__________________________________________________________________________________________________________________________________________________________________________________-
+Actual code:
+
 for _ in range(int(input())):                       
     z = int(input())                                        #taking input from user (no.of test cases)(minutes)
-    l_n = input().split()[:z]                                 # taking multiple inputs (milk or cookie)
+    l_n = input().split()[:z]                               # taking multiple inputs (milk or cookie)
     c=0                                                     #initializing
     for i in l_n:                                             
         if i=="cookie":                                     #if else used whenever he gets a cookie c is incremented or else nothing happens to the value of c
