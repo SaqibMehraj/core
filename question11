@@ -1,0 +1,11 @@
+in_t=int(input())                                          #no. of inputs
+for i in range(in_t):
+    ch=input()                                             #input character
+    if(ch=='b' or ch=='B'):                                #if ,else if ladder to correspond each character to a word we need to display
+        print("BattleShip")                                 
+    elif(ch=='c' or ch=='C'):
+        print("Cruiser")
+    elif(ch=='d' or ch=='D'):
+        print("Destroyer")
+    elif(ch=='f' or ch=='F'):
+        print("Frigate")
